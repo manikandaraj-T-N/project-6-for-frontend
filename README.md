@@ -20,7 +20,7 @@ The Hotel Booking project is a website designed to facilitate hotel bookings. It
 
 ### Links
 
-- [Hotel Booking]()
+- [Hotel Booking](https://project-6-for-frontend.vercel.app/)
 ## Features
 
 - **Navbar:** A navigation bar for easy access to different sections of the website.
