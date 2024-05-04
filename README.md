@@ -16,6 +16,7 @@ The Hotel Booking project is a website designed to facilitate hotel bookings. It
 
 ### Screenshot
 
+![Screenshot 2024-05-04 at 17-12-48 Hotel Booking](https://github.com/manikandaraj-T-N/project-6-for-frontend/assets/93505267/2f1e5be0-8094-432f-ab0d-171bf0cb7fe4)
 
 ### Links
 
