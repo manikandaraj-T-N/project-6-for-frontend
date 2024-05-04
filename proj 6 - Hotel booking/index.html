@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+
+    <!-- css file -->
+    <link rel="stylesheet" href="./assest/css/home.css">
+
+    <!--boostrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="./assest/image/fav icon/favicon.jpg" type="image/x-icon">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!-- start of logo and navbar -->
+    <div class="logoandnavbar">
+        <div class="container">
+            <div class="logoandnavbar-inner">
+                <div class="row">
+                    <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 col-xl-3 col-xxl-3">
+                        <div class="logo">
+                            <img src="./assest/image/logo.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 col-xl-9 col-xxl-9">
+                        <div class="navbar">
+                            <div class="navbar-inner">
+                                <button class="navbar-toggle" id="navbar-toggle">
+                                    <span class="toggle-icon"></span>
+                                    <span class="toggle-icon"></span>
+                                    <span class="toggle-icon"></span>
+                                </button>
+                                <ul class="navbar-menu" id="navbar-menu">
+                                    <li>
+                                        <select name="home" id="" class="home">
+                                            <option value="" disabled selected class="nav-item">Home</option>
+                                            <option value="Home 1">Home 1</option>
+                                            <option value="Home 2"> Home 2</option>
+                                            <option value="Home 3"> Home 3</option>
+                                        </select>
+                                    </li>
+
+                                    <li>
+                                        <select name="pages" id="" class="pages">
+                                            <option value="" disabled selected class="nav-item">Pages</option>
+                                            <option value="page 1">Page 1</option>
+                                            <option value="page 2"> Page 2</option>
+                                            <option value="page 3"> Page 3</option>
+                                        </select>
+                                    </li>
+
+                                    <li>
+                                        <select name="hotel" id="" class="hotel">
+                                            <option value="" disabled selected class="nav-item">Hotel</option>
+                                            <option value="hotel 1">Hotel 1</option>
+                                            <option value="hotel 2"> Hotel 2</option>
+                                            <option value="hotel 3"> Hotel 3</option>
+                                        </select>
+                                    </li>
+
+                                    <li>
+                                        <select name="flights" id="" class="flights">
+                                            <option value="" disabled selected class="nav-item">Flights</option>
+                                            <option value="flights 1">Flight 1</option>
+                                            <option value="flights 2"> Flight 2 </option>
+                                            <option value="flights 3"> Flight 3 </option>
+                                        </select>
+                                    </li>
+
+                                    <li>
+                                        <select name="car" id="" class="car">
+                                            <option value="" disabled selected class="nav-item">Car</option>
+                                            <option value="car 1">Car 1</option>
+                                            <option value="car 2"> Car 2 </option>
+                                            <option value="car 3"> Car 3 </option>
+                                        </select>
+                                    </li>
+
+
+                                    <li>
+                                        <select name="package" id="" class="package">
+                                            <option value="" disabled selected class="nav-item">Package</option>
+                                            <option value="package 1">Package 1</option>
+                                            <option value="package 2"> Package 2 </option>
+                                            <option value="package 3"> Package 3 </option>
+                                        </select>
+                                    </li>
+
+                                    <li>
+                                        <select name="cruises" id="" class="cruises">
+                                            <option value="" disabled selected class="nav-item">Cruises</option>
+                                            <option value="cruises 1">Cruises 1</option>
+                                            <option value="cruises 2"> Cruises 2 </option>
+                                            <option value="cruises 3"> Cruises 3 </option>
+                                        </select>
+                                    </li>
+
+                                    <li>
+                                        <select name="tour" id="" class="tour">
+                                            <option value="" disabled selected class="nav-item">Tour</option>
+                                            <option value="tour 1">Tour 1</option>
+                                            <option value="tour 2"> Tour 2 </option>
+                                            <option value="tour 3"> Tour 3 </option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end of logo and navbar -->
+
+    <!-- start of form -->
+    <div class="form">
+        <div class="container">
+            <div class="form-inner">
+
+                <div class="form-inner-1">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-4 col-xl-2 col-xxl-2">
+                            <div class="form-icon">
+                                <a onclick="showForm('flight')"><img src="./assest/image/form/icon-flight.png"
+                                        alt=""></a>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-4 col-xl-2 col-xxl-2">
+                            <div class="form-icon">
+                                <a onclick="showForm('hotel')"><img src="./assest/image/form/icon-hotel.png" alt=""></a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-4 col-xl-2 col-xxl-2">
+                            <div class="form-icon">
+                                <a onclick="showForm('car')"><img src="./assest/image/form/icon-car.png" alt=""></a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-4 col-xl-2 col-xxl-2">
+                            <div class="form-icon">
+                                <a onclick="showForm('tour')"><img src="./assest/image/form/icon-tour.png" alt=""></a>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-4 col-xl-2 col-xxl-2">
+                            <div class="form-icon">
+                                <a onclick="showForm('cruise')"><img src="./assest/image/form/icon-cruise.png"
+                                        alt=""></a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-2 col-sm-4 col-4 col-xl-2 col-xxl-2">
+                            <div class="form-icon">
+                                <a onclick="showForm('vacation')"><img src="./assest/image/form/icon-vacation.png"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Define separate forms for each image -->
+                <div class="form-inner-2" id="flightForm">
+
+                    <p class="form-description"> Form for flight</p>
+                    <h2 class="form-head">
+                        Where would you like to go?
+                    </h2>
+                    <div class="form-inner-2-content">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-xl-4 col-xxl-4">
+                                <form action="" class="form-destination">
+                                    <input type="text" name="destination" id="destination" placeholder="Destination:"
+                                        required class="form-control">
+                                </form>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-xl-2 col-xxl-2">
+                                <form action="" class="form-checkin">
+                                    <input type="date" name="check-in" id="check-in" placeholder="Check-In"
+                                        class="form-control">
+                                </form>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-xl-2 col-xxl-2">
+                                <form action="" class="form-checkout">
+                                    <input type="date" name="check-out" id="check-out" placeholder="Check-Out"
+                                        class="form-control">
+                                </form>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-xl-2 col-xxl-2">
+                                <form action="" class="form-control form-guest">
+                                    <select id="guest" class="dropdown-guest">
+                                        <option value="option1">Guest 1</option>
+                                        <option value="option2">Guest 2</option>
+                                        <option value="option3">Guest 3</option>
+                                    </select>
+                                </form>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-xl-2 col-xxl-2">
+                                <form action="" class="form-submit">
+                                    <button type="submit" class="form-control">Search <i
+                                            class="fa-solid fa-magnifying-glass"></i> </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-inner-2" id="hotelForm" style="display: none;">
+                    <p class="form-description">Form for hotel</p>
+                    <h2 class="form-head">
+                        Where would you like to stay?
+                    </h2>
+                    <div class="form-inner-2-content">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-xl-4 col-xxl-4">
+                                <form action="" class="form-destination">
+                                    <input type="text" name="destination" id="destination" placeholder="Destination:"
+                                        required class="form-control">
+                                </form>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-xl-2 col-xxl-2">
+                                <form action="" class="form-checkin">
+                                    <input type="date" name="check-in" id="check-in" placeholder="Check-In"
+                                        class="form-control">
+                                </form>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-xl-2 col-xxl-2">
+                                <form action="" class="form-checkout">
+                                    <input type="date" name="check-out" id="check-out" placeholder="Check-Out"
+                                        class="form-control">
+                                </form>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-xl-2 col-xxl-2">
+                                <form action="" class="form-control form-guest">
+                                    <select id="guest" class="dropdown-guest">
+                                        <option value="option1">Guest 1</option>
+                                        <option value="option2">Guest 2</option>
+                                        <option value="option3">Guest 3</option>
+                                    </select>
+                                </form>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-xl-2 col-xxl-2">
+                                <form action="" class="form-submit">
+                                    <button type="submit" class="form-control">Search <i
+                                            class="fa-solid fa-magnifying-glass"></i> </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-inner-2" id="carForm" style="display: none;">
+                    <p class="form-description">Form for car</p>
+                    <h2 class="form-head">
+                        Where would you like to travel via car ?
+                    </h2>
+                    <div class="form-inner-2-content">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-xl-4 col-xxl-4">
+                                <form action="" class="form-destination">
+                                    <input type="text" name="destination" id="destination" placeholder="Destination:"
+                                        required class="form-control">
+                                </form>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-xl-2 col-xxl-2">
+                                <form action="" class="form-checkin">
+                                    <input type="date" name="check-in" id="check-in" placeholder="Check-In"
+                                        class="form-control">
+                                </form>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-xl-2 col-xxl-2">
+                                <form action="" class="form-checkout">
+                                    <input type="date" name="check-out" id="check-out" placeholder="Check-Out"
+                                        class="form-control">
+                                </form>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-xl-2 col-xxl-2">
+                                <form action="" class="form-control form-guest">
+                                    <select id="guest" class="dropdown-guest">
+                                        <option value="option1">Guest 1</option>
+                                        <option value="option2">Guest 2</option>
+                                        <option value="option3">Guest 3</option>
+                                    </select>
+                                </form>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-xl-2 col-xxl-2">
+                                <form action="" class="form-submit">
+                                    <button type="submit" class="form-control">Search <i
+                                            class="fa-solid fa-magnifying-glass"></i> </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-inner-2" id="tourForm" style="display: none;">
+                    <p class="form-description">Form for tour</p>
+                    <h2 class="form-head">
+                        Where would you like to go for tour?
+                    </h2>
+                    <div class="form-inner-2-content">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-xl-4 col-xxl-4">
+                                <form action="" class="form-destination">
+                                    <input type="text" name="destination" id="destination" placeholder="Destination:"
+                                        required class="form-control">
+                                </form>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-xl-2 col-xxl-2">
+                                <form action="" class="form-checkin">
+                                    <input type="date" name="check-in" id="check-in" placeholder="Check-In"
+                                        class="form-control">
+                                </form>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-xl-2 col-xxl-2">
+                                <form action="" class="form-checkout">
+                                    <input type="date" name="check-out" id="check-out" placeholder="Check-Out"
+                                        class="form-control">
+                                </form>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-xl-2 col-xxl-2">
+                                <form action="" class="form-control form-guest">
+                                    <select id="guest" class="dropdown-guest">
+                                        <option value="option1">Guest 1</option>
+                                        <option value="option2">Guest 2</option>
+                                        <option value="option3">Guest 3</option>
+                                    </select>
+                                </form>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-xl-2 col-xxl-2">
+                                <form action="" class="form-submit">
+                                    <button type="submit" class="form-control">Search <i
+                                            class="fa-solid fa-magnifying-glass"></i> </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-inner-2" id="cruiseForm" style="display: none;">
+                    <p class="form-description">Form for cruise</p>
+                    <h2 class="form-head">
+                        Where would you like to go?
+                    </h2>
+                    <div class="form-inner-2-content">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-xl-4 col-xxl-4">
+                                <form action="" class="form-destination">
+                                    <input type="text" name="destination" id="destination" placeholder="Destination:"
+                                        required class="form-control">
+                                </form>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-xl-2 col-xxl-2">
+                                <form action="" class="form-checkin">
+                                    <input type="date" name="check-in" id="check-in" placeholder="Check-In"
+                                        class="form-control">
+                                </form>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-xl-2 col-xxl-2">
+                                <form action="" class="form-checkout">
+                                    <input type="date" name="check-out" id="check-out" placeholder="Check-Out"
+                                        class="form-control">
+                                </form>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-xl-2 col-xxl-2">
+                                <form action="" class="form-control form-guest">
+                                    <select id="guest" class="dropdown-guest">
+                                        <option value="option1">Guest 1</option>
+                                        <option value="option2">Guest 2</option>
+                                        <option value="option3">Guest 3</option>
+                                    </select>
+                                </form>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-xl-2 col-xxl-2">
+                                <form action="" class="form-submit">
+                                    <button type="submit" class="form-control">Search <i
+                                            class="fa-solid fa-magnifying-glass"></i> </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-inner-2" id="vacationForm" style="display: none;">
+                    <p class="form-description">Form for vacation</p>
+                    <h2 class="form-head">
+                        Where would you like to go for vacation?
+                    </h2>
+                    <div class="form-inner-2-content">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 col-xl-4 col-xxl-4">
+                                <form action="" class="form-destination">
+                                    <input type="text" name="destination" id="destination" placeholder="Destination:"
+                                        required class="form-control">
+                                </form>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-xl-2 col-xxl-2">
+                                <form action="" class="form-checkin">
+                                    <input type="date" name="check-in" id="check-in" placeholder="Check-In"
+                                        class="form-control">
+                                </form>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-xl-2 col-xxl-2">
+                                <form action="" class="form-checkout">
+                                    <input type="date" name="check-out" id="check-out" placeholder="Check-Out"
+                                        class="form-control">
+                                </form>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-xl-2 col-xxl-2">
+                                <form action="" class="form-control form-guest">
+                                    <select id="guest" class="dropdown-guest">
+                                        <option value="option1">Guest 1</option>
+                                        <option value="option2">Guest 2</option>
+                                        <option value="option3">Guest 3</option>
+                                    </select>
+                                </form>
+                            </div>
+
+                            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 col-xl-2 col-xxl-2">
+                                <form action="" class="form-submit">
+                                    <button type="submit" class="form-control">Search <i
+                                            class="fa-solid fa-magnifying-glass"></i> </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end  of form -->
+
+    <!-- start of sale -->
+    <div class="sale">
+        <div class="sale-inner">
+
+            <div class="container">
+                <div class="sale-inner-1">
+                    <div>
+                        <h2 class="sale-head">Hot Sale Today: <span>Paris, Amsterdam, Saint Petersburg & more </span>
+                        </h2>
+                    </div>
+                    <div>
+                        <button type="submit">View all sales <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="sale-inner-2">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 col-xl-3 col-xxl-3">
+                                <div class="sale-2-img border-right border-320-576 border-576-768">
+                                    <img src="./assest/image/sale/img-1.jpg" alt="">
+                                    <div class="sale-2-img-cont">
+                                        <h2>Copley Square Hotel</h2>
+                                        <p>Boston, Massachusetts</p>
+                                        <hr class="hr">
+                                    </div>
+
+                                    <div class="sale-2-price">
+                                        <p class="sale-2-start-price">From <span>$269</span></p>
+                                        <p class="sale-2-end-price"><span>$175</span>/night</p>
+                                    </div>
+
+                                    <div class="sale-price-cont">
+                                        <h6>Save <br> <span>30%</span></h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 col-xl-3 col-xxl-3">
+                                <div class="sale-2-img border-right border-320-576 border-576-768">
+                                    <img src="./assest/image/sale/img-2.jpg" alt="">
+                                    <div class="sale-2-img-cont">
+                                        <h2>Grand Hotel Bagni Nuovi</h2>
+                                        <p> Boston, Italy </p>
+                                        <hr class="hr">
+                                    </div>
+
+                                    <div class="sale-2-price">
+                                        <p class="sale-2-start-price">From <span>$632</span></p>
+                                        <p class="sale-2-end-price"><span>$345</span>/night</p>
+                                    </div>
+
+                                    <div class="sale-price-cont">
+                                        <h6>Save <br> <span>30%</span></h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 col-xl-6 col-xxl-6">
+                                <div class="sale-2-img border-320-576 border-320-576-3 border-576-768">
+                                    <img src="./assest/image/sale/img-3.jpg" alt="">
+                                    <div class="sale-2-img-cont">
+                                        <h2>The Standard, East Village</h2>
+                                        <p> New York, New York </p>
+                                        <hr class="hr">
+                                    </div>
+
+                                    <div class="sale-2-price">
+                                        <p class="sale-2-start-price">From <span>$582</span></p>
+                                        <p class="sale-2-end-price"><span>$258</span>/night</p>
+                                    </div>
+
+                                    <div class="sale-price-cont">
+                                        <h6>Save <br> <span>30%</span></h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 col-xl-6 col-xxl-6">
+                                <div class="sale-2-img border-right border-right-2-1 border-320-576 border-576-768">
+                                    <img src="./assest/image/sale/img-4.jpg" alt="">
+                                    <div class="sale-2-img-cont">
+                                        <h2>The Standard, East Village</h2>
+                                        <p> New York, New York </p>
+                                        <hr class="hr">
+                                    </div>
+
+                                    <div class="sale-2-price">
+                                        <p class="sale-2-start-price">From <span>$457</span></p>
+                                        <p class="sale-2-end-price"><span>$258</span>/night</p>
+                                    </div>
+
+                                    <div class="sale-price-cont">
+                                        <h6>Save <br> <span>30%</span></h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 col-xl-3 col-xxl-3">
+                                <div class="sale-2-img border-right border-right-2 border-320-576 border-576-768">
+                                    <img src="./assest/image/sale/img-5.jpg" alt="">
+                                    <div class="sale-2-img-cont">
+                                        <h2>Grand Hotel Bagni Nuovi</h2>
+                                        <p> Boston, Italy </p>
+                                        <hr class="hr">
+                                    </div>
+
+                                    <div class="sale-2-price">
+                                        <p class="sale-2-start-price">From <span>$269</span></p>
+                                        <p class="sale-2-end-price"><span>$175</span>/night</p>
+                                    </div>
+
+                                    <div class="sale-price-cont">
+                                        <h6>Save <br> <span>30%</span></h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 col-xl-3 col-xxl-3">
+                                <div class="sale-2-img border-right-2-3 border-320-576 border-576-768">
+                                    <img src="./assest/image/sale/img-6.jpg" alt="">
+                                    <div class="sale-2-img-cont">
+                                        <h2>Copley Square Hotel</h2>
+                                        <p>Boston, Massachusetts</p>
+                                        <hr class="hr">
+                                    </div>
+
+                                    <div class="sale-2-price">
+                                        <p class="sale-2-start-price">From <span>$354</span></p>
+                                        <p class="sale-2-end-price"><span>$255</span>/night</p>
+                                    </div>
+
+                                    <div class="sale-price-cont">
+                                        <h6>Save <br> <span>30%</span></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end  of sale -->
+
+
+    <!--start of travel -->
+    <div class="travel">
+        <div class="travel-inner">
+            <div class="container">
+                <div class="travel-inner-1">
+                    <div>
+                        <h2 class="travel-head"> Top Travel Destinations</h2>
+                    </div>
+                    <div>
+                        <button type="submit">View all <i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travel-inner-2">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-12 col-12 col-xl-3 col-xxl-3">
+                            <div class="travel-2-location">
+                                <div class="location-intro">
+                                    <p class="title">Discover</p>
+                                    <p class="loc-num"> <span>2364</span> destination</p>
+                                    <p class="title">with</p>
+                                    <p class="loc-num"><span>152,364</span> properties</p>
+                                </div>
+
+                                <div class="location-filter">
+                                    <ul>
+                                        <li><a href=""><i class="fa-solid fa-location-dot"></i> &nbsp;Recommendation
+                                                for
+                                                you</a></li>
+                                        <li><a href=""><i class="fa-solid fa-location-dot"></i> &nbsp;Australia and
+                                                Oceania</a></li>
+                                        <li><a href=""><i class="fa-solid fa-location-dot"></i> &nbsp;Asia</a></li>
+                                        <li><a href=""><i class="fa-solid fa-location-dot"></i> &nbsp;Europe</a>
+                                        </li>
+                                        <li><a href=""><i class="fa-solid fa-location-dot"></i> &nbsp;USA &
+                                                Canada</a>
+                                        </li>
+                                        <li><a href=""><i class="fa-solid fa-location-dot"></i> &nbsp;The Rest of
+                                                World</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-9 col-md-12 col-sm-12 col-12 col-xl-9 col-xxl-9">
+                            <div class="destination-img">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 col-xl-4 col-xxl-4">
+                                        <div class="travel-destination">
+                                            <div class="destination-place">
+                                                <a href="">London - UK </a>
+                                                <p> 1289 <span>properties</span> </p>
+                                            </div>
+                                            <img src="./assest/image/travel/destination img-1.jpg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 col-xl-4 col-xxl-4">
+                                        <div class="travel-destination">
+                                            <div class="destination-place">
+                                                <a href="">Paris - France </a>
+                                                <p> 239<span>properties</span> </p>
+                                            </div>
+                                            <img src="./assest/image/travel/destination img-2.jpg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 col-xl-4 col-xxl-4">
+                                        <div class="travel-destination">
+                                            <div class="destination-place">
+                                                <a href="">Rome, Itlay </a>
+                                                <p> 478 <span>properties</span> </p>
+                                            </div>
+                                            <img src="./assest/image/travel/destination img-3.jpg" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 col-xl-4 col-xxl-4">
+                                        <div class="travel-destination">
+                                            <div class="destination-place">
+                                                <a href="">Barcelona, Spain</a>
+                                                <p> 452 <span>properties</span> </p>
+                                            </div>
+
+                                            <img src="./assest/image/travel/destination img-4.jpg" alt="">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 col-xl-4 col-xxl-4">
+                                        <div class="travel-destination">
+                                            <div class="destination-place">
+                                                <a href="">Madrid, Spain </a>
+                                                <p> 794 <span>properties</span> </p>
+                                            </div>
+
+                                            <img src="./assest/image/travel/destinaton img-5.jpg" alt="">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-6 col-12 col-xl-4 col-xxl-4">
+                                        <div class="travel-destination">
+                                            <div class="destination-place">
+                                                <a href="">Veinna, Spain </a>
+                                                <p> 1289 <span>properties</span> </p>
+                                            </div>
+                                            <img src="./assest/image/travel/destination img-6.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- end of travel -->
+
+    <!-- start of magazine -->
+    <div class="magazine">
+        <div class="container">
+            <div class="magazine-inner-1">
+                <h2 class="magazine-head">Travel Magazine</h2>
+                <button type="submit">View all <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <div class="magazine-inner-2">
+            <div class="magazine-2-inner-cont">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12 col-xl-6 col-xxl-6">
+                        <div class="magazine-2-content">
+                            <h2>Five festivals to look forward to this year</h2>
+                            <ul>
+                                <li>by <a href="" title="">Admin -</a></li>
+                                <li>03.04.2024</li>
+                            </ul>
+                            <hr class="hr">
+                            <div class="magazine-body">
+                                <p>Suspendisse ullamcorper lacus et commodo laoreet. Sed sodales aliquet felis, quis
+                                    volutpat massa imperdiet in. Praesent rutrum malesuada risus, ullamcorper
+                                    pretium
+                                    tortor. Mauris lacinia nisl id massa consectetur, eu tempus mauris lacinia.
+                                    Fusce
+                                    commodo porttitor sapien quis condimentum.
+                                </p>
+
+                                <p> Curabitur sollicitudin magna sed sem blandit sodales. Integer in eros sit amet
+                                    tellus vulputate laoreet ut in purus. Nullam quis lacus nisl. <br>
+                                    Sed venenatis commodo leo, ac pulvinar ipsum mattis vitae. Suspendisse eu libero
+                                    odio.
+                                </p>
+
+                                <p> Curabitur sollicitudin magna sed sem blandit sodales. Integer in eros sit amet
+                                    tellus vulputate laoreet ut in purus. Nullam quis lacus nisl. <br>
+                                    Sed venenatis commodo leo, ac pulvinar ipsum mattis vitae.
+                                </p>
+                            </div>
+
+                            <div class="magazine-footer">
+                                <div class="">
+                                    <a href="" title="" class="magazine-icon">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="" title="" class="magazine-icon">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                    <a href="" title="" class="magazine-icon">
+                                        <i class="fa-brands fa-google-plus-g"></i>
+                                    </a>
+                                </div>
+                                <a href="" title="" class="view-btn">view more
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12 col-xl-6 col-xxl-6">
+                        <div class="magazine-img-content-inner">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12 col-xl-6 col-xxl-6">
+                                    <div class="magazine-img">
+                                        <a href=""><img src="./assest/image/magazine/img-1.jpg" alt=""
+                                                class="border-green"></a>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12 col-xl-6 col-xxl-6">
+                                    <div class="magazine-img-cont">
+                                        <a href="" class="magazine-img-head"> Thailand by Train with Eastern and
+                                            Oriental Express</a><br>
+                                        <a href="" class="magazine-img-date">17.04.2024</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12 col-xl-6 col-xxl-6">
+                                    <div class="magazine-img">
+                                        <a href=""> <img src="./assest/image/magazine/img-2.jpg" alt=""
+                                                class="border-green"></a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12 col-xl-6 col-xxl-6">
+                                    <div class="magazine-img-cont">
+                                        <a href="" class="magazine-img-head"> Thailand by Train with Eastern and
+                                            Oriental Express</a><br>
+                                        <a href="" class="magazine-img-date">17.04.2024</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12 col-xl-6 col-xxl-6">
+                                    <div class="magazine-img">
+                                        <a href=""><img src="./assest/image/magazine/img-3.jpg" alt=""
+                                                class="border-green"></a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12 col-xl-6 col-xxl-6">
+                                    <div class="magazine-img-cont">
+                                        <a href="" class="magazine-img-head"> Thailand by Train with Eastern and
+                                            Oriental Express</a><br>
+                                        <a href="" class="magazine-img-date">17.04.2024</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12 col-xl-6 col-xxl-6">
+                                    <div class="magazine-img">
+                                        <a href=""><img src="./assest/image/magazine/img-3.jpg" alt=""
+                                                class="border-green"></a>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12 col-xl-6 col-xxl-6">
+                                    <div class="magazine-img-cont">
+                                        <a href="" class="magazine-img-head"> Thailand by Train with Eastern and
+                                            Oriental Express</a><br>
+                                        <a href="" class="magazine-img-date">17.04.2024</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of magazine -->
+
+    <!-- start of subscribe -->
+    <div class="subcribe">
+        <div class="subscribe-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12 col-xl-6 col-xxl-6">
+                        <div class="subscribe-1">
+                            <h2>Book with confidence</h2>
+                            <div class="cofidence">
+                                <div class="cofident-num-content">
+                                    <p class="confi-num">01</p>
+                                    <p class="confi-cont">No booking charges <br>
+                                        <span>We don't charge you an extra fee for booking a hotel room with
+                                            us</span>
+                                    </p>
+                                </div>
+
+                                <div class="cofident-num-content">
+                                    <p class="confi-num">02</p>
+                                    <p class="confi-cont">No cancellation fees <br>
+                                        <span>We don't charge you a cancellation or modification fee in case plans
+                                            change</span>
+                                    </p>
+                                </div>
+
+                                <div class="cofident-num-content">
+                                    <p class="confi-num">03</p>
+                                    <p class="confi-cont">Instant confirmation <br>
+                                        <span>Instant booking confirmation whether booking online or via the
+                                            telephone</span>
+                                    </p>
+                                </div>
+
+                                <div class="cofident-num-content">
+                                    <p class="confi-num">04</p>
+                                    <p class="confi-cont">Flexible booking <br>
+                                        <span>You can book up to a whole year in advance until the moment of your
+                                            stay</span>
+                                    </p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12 col-xl-6 col-xxl-6">
+                        <div class="subscribe-2">
+                            <h2>Subscribe to our newsletter</h2>
+                            <p class="news-cont">Enter your email address and we’ll send you our regular promotional
+                                emails, packed with
+                                special offers, great deals, and huge discounts</p>
+
+                            <div class="newletter-form">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <form action="">
+                                            <div class="input-group flex-nowrap mt-3">
+                                                <span class="input-group-text" id="addon-wrapping"><i
+                                                        class="fa-solid fa-envelope"></i></span>
+                                                <input name="news-email" type="email" class="form-control"
+                                                    placeholder="Your Email" aria-label="Username"
+                                                    aria-describedby="addon-wrapping" required>
+                                                <button class="news-submit" type="submit" id="button-addon1"
+                                                    for="news-email">Subscribe </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="newsletter-social">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h2>Follow Us</h2>
+                                        <div class="news-social-icons">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                            <i class="fa-brands fa-twitter"></i>
+                                            <i class="fa-brands fa-pinterest"></i>
+                                            <i class="fa-brands fa-linkedin"></i>
+                                            <i class="fa-solid fa-camera"></i>
+                                            <i class="fa-brands fa-google-plus-g"></i>
+                                            <i class="fa-brands fa-digg"></i>
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of subscribe -->
+
+    <!-- start of footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 col-xl-4 col-xxl-4">
+                        <div class="footer-logo">
+                            <img src="./assest/image/logo-footer.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 col-xl-4 col-xxl-4">
+                        <div class="footer-about">
+                            <ul>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">FQA</a></li>
+                                <li><a href="">Carrers </a></li>
+                            </ul>
+
+                            <ul>
+                                <li><a href=""> Contact Us</a></li>
+                                <li><a href="">Privacy Policy</a></li>
+                                <li><a href="">Term of Service</a></li>
+                                <li><a href="">Security</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 col-xl-4 col-xxl-4">
+                        <div class="footer-form">
+                            <form action="">
+                                <select>
+                                    <option value="english" selected>English</option>
+                                    <option value="tamil">Tamil</option>
+                                    <option value="telugu">Telugu</option>
+                                </select>
+
+                                <select>
+                                    <option value="IND" selected>IND</option>
+                                    <option value="USA">USA</option>
+                                    <option value="AUS">AUS</option>
+                                </select>
+                            </form>
+                        </div>
+
+                        <div class="copy-rights">
+                            <p> © 2024 – 2024 Bookyourtrip™ All rights reserved. </p>
+                            <p class="design">Designed by Manikandaraj</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end  of footer -->
+
+
+    <!-- boostrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- js file linking -->
+    <script src="./assest/js/home.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+</body>
+
+</html>
